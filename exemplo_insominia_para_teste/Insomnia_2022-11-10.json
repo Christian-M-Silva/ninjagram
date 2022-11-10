@@ -1,0 +1,259 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-11-10T11:09:23.638Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_43da032f6dd144ccb56515aa30093ad4",
+            "parentId": "fld_a1233d0a07fc4b928477b1294951df34",
+            "modified": 1667818256625,
+            "created": 1666003349129,
+            "url": "{{ _.base_url }}/comment",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.token }}"
+            },
+            "metaSortKey": -1666003349129,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_a1233d0a07fc4b928477b1294951df34",
+            "parentId": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "modified": 1666003347138,
+            "created": 1666003347138,
+            "name": "crud",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666003347138,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "parentId": null,
+            "modified": 1665654779106,
+            "created": 1665654779106,
+            "name": "ninjagram",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_9627bba356d54e58b2537a1a05b3f38f",
+            "parentId": "fld_a1233d0a07fc4b928477b1294951df34",
+            "modified": 1668078480672,
+            "created": 1666003427609,
+            "url": "{{ _.base_url }}/comment",
+            "name": "Store",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"comment\" : \"\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_a74511b376b2499ba87dfada0868c528"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.token }}"
+            },
+            "metaSortKey": -1665959782971,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_87942bddd4ce41948a45eab1dcde1e9d",
+            "parentId": "fld_a1233d0a07fc4b928477b1294951df34",
+            "modified": 1666649819287,
+            "created": 1666003505104,
+            "url": "{{ _.base_url }}/comment/63567c2ea2687f37f87c9c0b  ",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.token }}"
+            },
+            "metaSortKey": -1665937999892,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5d61d6e01b4f4f73bc4eb94cd46d3a48",
+            "parentId": "fld_a1233d0a07fc4b928477b1294951df34",
+            "modified": 1666649859116,
+            "created": 1666003628560,
+            "url": "{{ _.base_url }}/comment/63570ea6dee0bd1230390326",
+            "name": "Destroy",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.token }}"
+            },
+            "metaSortKey": -1665927108352.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_431708978d874740b4e986b561060dc5",
+            "parentId": "fld_41309756e7fe445fb3f99bd0716e254e",
+            "modified": 1668078477891,
+            "created": 1665654902264,
+            "url": "{{ _.base_url }}/register",
+            "name": "Register",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"nome\" : \"\",\n\t\t\"email\" : \"\",\n\t\t\"senha\" : \"{{ _.password }}\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665916216813,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_41309756e7fe445fb3f99bd0716e254e",
+            "parentId": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "modified": 1666003321596,
+            "created": 1666003321596,
+            "name": "register-login",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666003321596,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_55e9dac51c3541bb8d5c3434dd6602f7",
+            "parentId": "fld_41309756e7fe445fb3f99bd0716e254e",
+            "modified": 1668078477145,
+            "created": 1665654833782,
+            "url": "{{ _.base_url }}/login",
+            "name": "Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\" : \"chr@email.com\",\n\t\"senha\" : \"{{ _.password }}\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665916216763,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_9a25473518ead6beb12c7e8ba82f9fe750f06349",
+            "parentId": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "modified": 1667818098752,
+            "created": 1665654779115,
+            "name": "Base Environment",
+            "data": {
+                "base_url": "http://127.0.0.1:3333",
+                "password": "12345",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MzU2N2NhN2EyNjg3ZjM3Zjg3YzljMGUiLCJpYXQiOjE2Njc4MTgwNzl9.4E2NysTgSIQ_N1K3NfSwbU0vCWjnc0t32fJLLl_tcbc"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "base_url",
+                    "password",
+                    "token"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1665654779115,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_9a25473518ead6beb12c7e8ba82f9fe750f06349",
+            "parentId": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "modified": 1665654779118,
+            "created": 1665654779118,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_7508551772b744d8a15edd916599d428",
+            "parentId": "wrk_f42a2bb57cbb4b04817f1e8f6154d1e2",
+            "modified": 1665654779107,
+            "created": 1665654779107,
+            "fileName": "ninjagram",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
