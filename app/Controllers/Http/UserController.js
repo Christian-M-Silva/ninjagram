@@ -7,7 +7,7 @@
 const User = use('App/Models/User')
 const { validateAll } = use('Validator')
 
-/**
+/*
  * Resourceful controller for interacting with users
  */
 class UserController {
